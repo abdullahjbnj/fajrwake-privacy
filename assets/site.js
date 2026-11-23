@@ -52,6 +52,34 @@
       var tocs = document.querySelectorAll('details.toc');
       for (var t = 0; t < tocs.length; t++) tocs[t].removeAttribute('open');
     }
+    // Copy email (support page): for devices where mailto: opens no email app.
+    var copies = document.querySelectorAll('button[data-copy]');
+    for (var c = 0; c < copies.length; c++) {
+      copies[c].addEventListener('click', function () {
+        var btn = this, text = btn.getAttribute('data-copy'), status = btn.parentNode.querySelector('.copy-status');
+        function done(ok) {
+          if (!ok) { // the browser refused: select the address so it can be copied by hand
+            var shown = btn.parentNode.querySelector('strong');
+            try { var r = document.createRange(); r.selectNodeContents(shown); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) { /* nothing to select */ }
+          }
+          if (status) status.textContent = btn.getAttribute(ok ? 'data-done' : 'data-fail');
+        }
+        function legacy() {
+          var area = document.createElement('textarea');
+          area.value = text; area.setAttribute('readonly', ''); area.style.position = 'fixed'; area.style.opacity = '0';
+          document.body.appendChild(area); area.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+          document.body.removeChild(area);
+          done(ok);
+        }
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(function () { done(true); }, legacy);
+        } else {
+          legacy();
+        }
+      });
+    }
     var buttons = document.querySelectorAll('.lang-switch button');
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', function () {
