@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="no-js" data-title-en="Support · Fajr Wake" data-title-ar="الدعم · فجر">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Fajr Wake | الدعم · فجر</title>
+<meta name="description" content="Help for Fajr Wake (فجر), the Fajr prayer alarm with wake-up challenges, on iPhone and Android: setup, challenges, Fajr Pro, troubleshooting and contact.">
+<meta name="theme-color" content="#0A0F24">
+<link rel="canonical" href="https://abdullahjbnj.github.io/fajrwake-privacy/support/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="ar" lang="ar">انتقل إلى المحتوى</span></a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="../" data-internal><img src="../assets/icon-180.png" alt="" width="34" height="34"><span>Fajr Wake <span aria-hidden="true">|</span> <span lang="ar">فجر</span></span></a>
+    <nav class="nav" aria-label="Site">
+      <a href="../support/" data-internal aria-current="page"><span data-l="en">Support</span><span data-l="ar" lang="ar">الدعم</span></a>
+      <a href="../privacy/" data-internal><span data-l="en">Privacy</span><span data-l="ar" lang="ar">الخصوصية</span></a>
+      <a href="../terms/" data-internal><span data-l="en">Terms</span><span data-l="ar" lang="ar">الشروط</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language / اللغة">
+      <button type="button" data-set-lang="ar" lang="ar">العربية</button><button type="button" data-set-lang="en" lang="en">English</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================== ENGLISH ============================== -->
+<div data-l="en" lang="en" dir="ltr">
+<section class="hero">
+  <img class="icon" src="../assets/icon-180.png" alt="Fajr Wake app icon" width="84" height="84">
+  <p class="eyebrow">Fajr Wake | فجر · Support</p>
+  <h1>Wake up for <em>Fajr</em>. We're here to help.</h1>
+  <p class="lead">Guides for setting up the Fajr alarm and its wake-up challenges on iPhone and Android, Fajr Pro subscriptions, and fixes for common problems.</p>
+  <div class="actions">
+    <a class="btn primary" href="mailto:fajrwakeapp@gmail.com?subject=Fajr%20Wake%20support">Email support</a>
+    <a class="btn" href="../privacy/" data-internal>Privacy Policy</a>
+    <a class="btn" href="../terms/" data-internal>Terms of Use</a>
+  </div>
+</section>
+
+<div class="layout with-toc">
+<details class="toc" open>
+  <summary>Help topics</summary>
+  <ol>
+    <li><a href="#en-about">About Fajr Wake</a></li>
+    <li><a href="#en-alarm">How the Fajr alarm works</a></li>
+    <li><a href="#en-configure">Configure the alarm</a></li>
+    <li><a href="#en-qr">QR code challenge</a></li>
+    <li><a href="#en-walking">Walking challenge</a></li>
+    <li><a href="#en-barcode">Barcode and sink photo</a></li>
+    <li><a href="#en-pushups">Push-ups (experimental)</a></li>
+    <li><a href="#en-double">Double challenge</a></li>
+    <li><a href="#en-pro">Fajr Pro subscription</a></li>
+    <li><a href="#en-restore">Restore purchases</a></li>
+    <li><a href="#en-manage">Manage or cancel</a></li>
+    <li><a href="#en-troubleshooting">Troubleshooting</a></li>
+    <li><a href="#en-contact">Contact support</a></li>
+  </ol>
+</details>
+
+<div class="content">
+
+<section class="card" id="en-about">
+  <h2><span class="num">1</span>About Fajr Wake</h2>
+  <p>Fajr Wake (فجر) is an alarm for the Fajr prayer. It calculates Fajr time for your location and schedules the alarm by itself. When it rings, it stops only after you complete a challenge that gets you out of bed: scanning a QR code you printed, walking, scanning a product barcode, photographing your sink, or exercising.</p>
+  <ul>
+    <li>Prayer times are calculated on your phone with the open-source Adhan library, using the calculation method you choose (for example Umm al-Qura in Saudi Arabia).</li>
+    <li>A calendar, daily streak, streak protections, badges at 7, 30 and 100 days, and statistics follow your progress.</li>
+    <li>No account is needed, and your data stays on your phone (see the <a href="../privacy/" data-internal>Privacy Policy</a>).</li>
+  </ul>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span><p>Requires iOS 26 or later (it uses Apple's AlarmKit). The app is in Arabic and English and follows your iPhone's language; to change it for this app only, open Settings → Fajr Wake → Language.</p></div>
+    <div class="platform"><span class="pill android">Android</span><p>Requires Android 8.0 or later. The Android app is currently in Arabic.</p></div>
+  </div>
+</section>
+
+<section class="card" id="en-alarm">
+  <h2><span class="num">2</span>How the Fajr alarm works</h2>
+  <p>You choose when the alarm rings relative to the adhan (from 60 minutes before to 60 minutes after). Every day the app calculates Fajr for your saved location and sets the alarm.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ul>
+        <li>The alarm uses Apple's AlarmKit, so it rings even when the iPhone is on silent or in a Focus.</li>
+        <li>Fajr alarms are scheduled up to 7 days ahead, each with backup alarms behind it. They are checked and topped up every time the app runs. The <span class="ui">Coming Fajr alarms</span> card on the Home screen shows them.</li>
+        <li>Pressing <strong>Stop</strong> on the alarm does not end it: it rings again a few seconds later (5 seconds by default) until you complete your challenge in the app. Open the app (it opens on the challenge by default) and complete it.</li>
+        <li>While the app is open, it keeps ringing by itself at the <strong>media volume</strong>, and pauses only while you are walking or doing push-ups.</li>
+        <li>As a safety limit, an alarm ends by itself after 30 minutes.</li>
+      </ul>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ul>
+        <li>The alarm is set as an exact alarm and appears full screen, over the lock screen, at the set time. It is set again automatically after the phone restarts.</li>
+        <li>It keeps ringing until you complete your challenge on the alarm screen, for at most one hour.</li>
+        <li>The sound uses your phone's alarm volume. You can choose the sound, its level, and a gradual rise over 30 seconds.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Emergency stop</h3>
+  <p>If you really cannot complete the challenge (illness, travel, a broken camera or sensor, a lost code), you can end the alarm without it. That day does not count as a success, and your streak ends unless a streak protection is available.</p>
+  <ul>
+    <li><span class="pill ios">iPhone</span> On the challenge screen, tap <span class="ui">Emergency stop</span> and confirm. Without opening the app, run the <span class="ui">Emergency stop</span> shortcut from the Shortcuts app, or ask Siri: "Emergency stop Fajr Wake".</li>
+    <li><span class="pill android">Android</span> On the alarm screen, tap <span class="ui" lang="ar">إيقاف طارئ</span>, wait 30 seconds, then tap <span class="ui" lang="ar">إيقاف المنبه</span>.</li>
+  </ul>
+  <h3>Streaks and protections</h3>
+  <p>Each Fajr completed with the challenge grows your streak. You earn a streak protection for every 7 successful days (up to 2). If you miss a Fajr or use the emergency stop, a protection is used automatically so your streak stays without growing. You can turn this off in Settings. Test alarms never count.</p>
+</section>
+
+<section class="card" id="en-configure">
+  <h2><span class="num">3</span>Configure the alarm</h2>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ol>
+        <li>Open Fajr Wake. The <span class="ui">Finish setting up</span> card on the Home screen lists what is still missing.</li>
+        <li><strong>Location</strong>: Settings (gear icon) → <span class="ui">Location</span> → <span class="ui">Use my current location</span>, <span class="ui">Choose a city</span> or <span class="ui">Enter coordinates</span>.</li>
+        <li><strong>Calculation method</strong>: Settings → <span class="ui">Calculation method</span>. Choose the authority your local mosques follow. If your mosque calls the adhan a few minutes earlier or later, adjust <span class="ui">Fajr correction</span>.</li>
+        <li><strong>Alarm time</strong>: Settings → <span class="ui">Alarm time</span>, in 5-minute steps before or after the adhan.</li>
+        <li><strong>Allow alarms</strong>: in <span class="ui">Finish setting up</span>, tap <span class="ui">Continue</span> next to <span class="ui">Alarms</span> and allow. Allow <span class="ui">Reminders</span> (notifications) too, so the app can remind you before scheduled alarms run out.</li>
+        <li><strong>Challenge</strong>: Home → <span class="ui">Stop challenge</span>. The QR code is selected by default (see the next sections).</li>
+        <li>Turn on the <span class="ui">Fajr alarm</span> switch on the Home screen.</li>
+        <li><strong>Try it</strong>: Home → <span class="ui">Test alarm</span>, choose <span class="ui">In 1 minute</span>, lock the phone, and stop it with your challenge.</li>
+      </ol>
+      <p class="small muted">Settings → <span class="ui">After Stop</span> controls how soon the alarm rings again after Stop (3 to 30 seconds), whether the app opens after Stop, and whether the next ring waits while the app is open.</p>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ol>
+        <li>Open Fajr Wake. The <span class="ui" lang="ar">أكمل الإعداد</span> (Finish setup) card on the Home screen lists the permissions still needed: notifications, camera, exact alarms, showing over the lock screen and battery optimisation.</li>
+        <li><strong>Location</strong>: <span class="ui" lang="ar">الإعدادات</span> (Settings) → <span class="ui" lang="ar">استخدم موقعي الحالي</span> (use my current location), <span class="ui" lang="ar">اختر مدينة من القائمة</span> (choose a city) or <span class="ui" lang="ar">إدخال الإحداثيات يدويًا</span> (enter coordinates).</li>
+        <li><strong>Calculation method and correction</strong>: Settings → <span class="ui" lang="ar">طريقة الحساب</span> and <span class="ui" lang="ar">تصحيح وقت الفجر</span>.</li>
+        <li><strong>Alarm time</strong>: Settings → <span class="ui" lang="ar">وقت المنبه</span>, in 5-minute steps.</li>
+        <li><strong>Sound</strong>: Settings → <span class="ui" lang="ar">صوت المنبه</span>, with <span class="ui" lang="ar">معاينة الصوت</span> (preview).</li>
+        <li><strong>Challenge</strong>: Home → <span class="ui" lang="ar">طريقة إيقاف المنبه</span> (stop method).</li>
+        <li>Turn on the <span class="ui" lang="ar">منبه الفجر</span> (Fajr alarm) switch on the Home screen.</li>
+        <li><strong>Try it</strong>: Home → <span class="ui" lang="ar">تجربة المنبه</span> (test alarm). It rings after 10 seconds; you can lock the screen.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="en-qr">
+  <h2><span class="num">4</span>QR code challenge <span class="pill both" style="font-size:12px">Free</span></h2>
+  <p>Fajr Wake makes a QR code that is yours alone. Print it and stick it next to the bathroom sink, away from your bed. The alarm stops only when you scan it, which means you are really up.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ol>
+        <li>Settings → <span class="ui">My QR code</span> → <span class="ui">Create my code</span>. If you already have a code you want to use, tap <span class="ui">Use a QR code I already have</span> and scan it.</li>
+        <li>Tap <span class="ui">Print</span>, or <span class="ui">Share or save</span> to send it to yourself or save it to Photos.</li>
+        <li>Stick the printout by the sink, then tap <span class="ui">Test scanning</span> to check that the camera reads it in the bathroom light.</li>
+        <li>Allow the camera when asked.</li>
+      </ol>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ol>
+        <li>Open <span class="ui" lang="ar">طريقة إيقاف المنبه</span>, choose the QR code, then <span class="ui" lang="ar">إنشاء رمزي الخاص</span> (create my code).</li>
+        <li>Print it, share it, or save it to the gallery (Pictures → FajrWake). It cannot be scanned from the same phone's screen.</li>
+        <li>Stick it by the sink and tap <span class="ui" lang="ar">اختبار المسح</span> (test scanning).</li>
+      </ol>
+    </div>
+  </div>
+  <p class="note">Creating a new code makes the old printout stop working, so print the new one. Any copy of the same code works.</p>
+</section>
+
+<section class="card" id="en-walking">
+  <h2><span class="num">5</span>Walking challenge <span class="pill both" style="font-size:12px">Fajr Pro</span></h2>
+  <p>Walk a number of steps to stop the alarm, for example to the bathroom for wudu. You can choose from 10 to 200 steps (30 by default). Counting starts from zero when the alarm rings; steps from before never count.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ol>
+        <li>Settings → <span class="ui">Walking</span>, tap <span class="ui">Allow step counting</span> and allow <span class="ui">Motion &amp; Fitness</span>. Choose <span class="ui">Steps to walk</span>.</li>
+        <li>Try <span class="ui">Test step counting</span> to check that your iPhone counts your steps.</li>
+        <li>When the alarm rings, open Fajr Wake and walk. Hold the phone in front of you, as when you read it. The count starts after your first few steps.</li>
+      </ol>
+      <p class="small muted">Keep the app open while you walk: only steps walked with the walking screen open count. Shaking the phone is not counted as walking.</p>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ol>
+        <li>In <span class="ui" lang="ar">طريقة إيقاف المنبه</span>, choose walking and set <span class="ui" lang="ar">عدد الخطوات</span> (number of steps).</li>
+        <li>If your phone has a built-in step counter, tap <span class="ui" lang="ar">السماح بالنشاط البدني</span> (allow physical activity) to use it. Otherwise the motion sensor is used.</li>
+        <li>When the alarm rings, walk until the count is complete.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="en-barcode">
+  <h2><span class="num">6</span>Barcode and sink photo challenges <span class="pill both" style="font-size:12px">Fajr Pro</span></h2>
+  <h3>Product barcode</h3>
+  <p>Choose a product you always keep in the bathroom, such as toothpaste or soap, and register its barcode. When the alarm rings, it stops only when you scan that barcode. A barcode names a kind of product, so an identical product (same barcode) also works.</p>
+  <ul>
+    <li><span class="pill ios">iPhone</span> Settings → <span class="ui">Product barcode</span> → <span class="ui">Scan a product barcode</span>, then <span class="ui">Test scanning</span>. Change it later with <span class="ui">Replace with another product</span>.</li>
+    <li><span class="pill android">Android</span> In <span class="ui" lang="ar">طريقة إيقاف المنبه</span>, choose the barcode, then <span class="ui" lang="ar">تسجيل باركود منتج</span> (register a product barcode) and <span class="ui" lang="ar">اختبار المسح</span>.</li>
+  </ul>
+  <h3>Sink photo</h3>
+  <p>Photograph your bathroom sink; when the alarm rings, photograph the same sink again to stop it. The photos are compared on your phone and never uploaded.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ol>
+        <li>Settings → <span class="ui">Sink photo</span> → <span class="ui">Register my sink</span>.</li>
+        <li>Photograph your sink three times, then a few other things, so the app learns to tell your sink apart.</li>
+        <li>When it says your sink is ready, save it. Use <span class="ui">Test and calibrate</span> to add photos if it cannot tell your sink apart yet.</li>
+      </ol>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ol>
+        <li>In <span class="ui" lang="ar">طريقة إيقاف المنبه</span>, choose the sink photo, then <span class="ui" lang="ar">التقاط صورة مرجعية</span> (take a reference photo).</li>
+        <li>Use <span class="ui" lang="ar">اختبار المطابقة</span> (test the match) several times before relying on it.</li>
+      </ol>
+    </div>
+  </div>
+  <p class="note">Take the reference photos in the light you will have at Fajr (turn on the bathroom light), and show the basin, tap and what surrounds them. Big changes (new towels, a moved mirror, very different light) can stop it matching: register again. A photo of your sink shown on a screen or printed may be accepted, because a camera cannot prove you are there.</p>
+</section>
+
+<section class="card" id="en-pushups">
+  <h2><span class="num">7</span>Push-ups (experimental) <span class="pill both" style="font-size:12px">Fajr Pro</span></h2>
+  <p>The camera watches you from the side and counts push-ups (3 to 20, 3 by default). This challenge is experimental: test it several times before relying on it. Exercise only if you are able to, and stop if you feel pain.</p>
+  <ol>
+    <li>Put the phone on the floor, standing up (lean it against a wall, a box or a book), about two metres to your side, with the camera towards you.</li>
+    <li>Your whole body must be in the picture, seen from the side: shoulders, hands, hips and feet. Turn the light on.</li>
+    <li>A push-up counts when you go down until your elbows bend, then push back up until your arms are straight, with your body straight. Don't touch the phone while exercising.</li>
+  </ol>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span><p>Settings → <span class="ui">Push-ups</span>: choose the front or back camera and the number of push-ups. <span class="ui">Test push-up counting</span> lets you practise, and <span class="ui">Calibrate with my push-ups</span> measures your own push-ups so each full one counts. The camera cannot count while the screen is off; push-ups already counted stay.</p></div>
+    <div class="platform"><span class="pill android">Android</span><p>In <span class="ui" lang="ar">طريقة إيقاف المنبه</span>, choose the exercise challenge. Besides push-ups it offers squats and sit-to-stand (5 to 50 repetitions), watched by the front camera. Try it with <span class="ui" lang="ar">جرّب التمرين الآن</span> (try the exercise now). If you can't do push-ups in the morning, the alarm screen lets you switch to sit-to-stand.</p></div>
+  </div>
+</section>
+
+<section class="card" id="en-double">
+  <h2><span class="num">8</span>Double challenge <span class="pill both" style="font-size:12px">Fajr Pro</span></h2>
+  <p>Two different challenges, one after the other, for example walking and then the QR code. The alarm stops only when both are done, in order. When the first is done, the second opens.</p>
+  <ul>
+    <li><span class="pill ios">iPhone</span> Home → <span class="ui">Stop challenge</span> → <span class="ui">Double challenge</span>. Pick the two challenges, use <span class="ui">Swap the order</span> if needed, then <span class="ui">Use this double challenge</span>. <span class="ui">Turn off the double challenge</span> keeps the first challenge alone.</li>
+    <li><span class="pill android">Android</span> In <span class="ui" lang="ar">طريقة إيقاف المنبه</span>, choose <span class="ui" lang="ar">تحدٍّ مزدوج</span> (double challenge), tap each stage and pick its challenge.</li>
+  </ul>
+  <p class="small muted">Each of the two challenges needs its own setup (for example, a printed QR code and Motion &amp; Fitness access).</p>
+</section>
+
+<section class="card" id="en-pro">
+  <h2><span class="num">9</span>Fajr Pro subscription</h2>
+  <div class="summary-grid">
+    <div><b>Always free</b>Fajr prayer times, the Fajr alarm, the QR code challenge, the emergency stop, and your streak, calendar, badges and statistics.</div>
+    <div><b>With Fajr Pro</b>The walking, product barcode, sink photo and push-up (exercise) challenges, and the double challenge.</div>
+  </div>
+  <h3>Plans and prices</h3>
+  <ul>
+    <li><strong>Fajr Pro Monthly</strong> and <strong>Fajr Pro Annual</strong>, auto-renewing subscriptions.</li>
+    <li>In Saudi Arabia the prices are <strong>SAR 9.99 per month</strong> and <strong>SAR 59.99 per year</strong>. Elsewhere, the App Store or Google Play shows the price in your local currency. The price shown in the app before you confirm is the price you pay.</li>
+    <li>There is no free trial.</li>
+  </ul>
+  <h3>Billing terms</h3>
+  <ul>
+    <li><span class="pill ios">iPhone</span> Payment is charged to your Apple Account when you confirm the purchase. The subscription renews automatically at the same price for each period unless automatic renewal is turned off at least 24 hours before the current period ends. The renewal is charged within the 24 hours before it ends.</li>
+    <li><span class="pill android">Android</span> Payment is charged to your Google Play account. The subscription renews automatically under Google Play's terms until you cancel it.</li>
+    <li>After you cancel, Fajr Pro stays active until the end of the period you already paid for.</li>
+  </ul>
+  <h3>When Fajr Pro is not active</h3>
+  <p>Your alarm still rings. If you chose a Pro challenge, the alarm asks for your free QR code instead, and your setup is kept for when Fajr Pro is active again. If you have not created a QR code yet, the alarm keeps your chosen challenge so it can still be stopped. Create your free QR code to be ready.</p>
+  <p>To subscribe: <span class="pill ios">iPhone</span> Settings → <span class="ui">Fajr Pro</span> → choose a plan → <span class="ui">Subscribe</span>. <span class="pill android">Android</span> Settings → <span class="ui" lang="ar">فجر Pro</span> → choose a plan → <span class="ui" lang="ar">اشترك الآن</span> (subscribe now).</p>
+</section>
+
+<section class="card" id="en-restore">
+  <h2><span class="num">10</span>Restore purchases</h2>
+  <p>No Fajr Wake account is needed: Fajr Pro belongs to your Apple Account or Google account. After reinstalling, or on a new phone with the same account, it usually comes back by itself.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ol>
+        <li>Make sure you are signed in to the App Store with the Apple Account that bought Fajr Pro.</li>
+        <li>Open Settings → <span class="ui">Fajr Pro</span> → <span class="ui">Restore Purchases</span>. This uses Apple's StoreKit to sync your purchases with the App Store.</li>
+      </ol>
+      <p class="small muted">If the app says no active subscription was found, the subscription has expired or belongs to another Apple Account. If the App Store cannot be reached, check your connection and try again.</p>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ol>
+        <li>Make sure the phone uses the Google account that bought Fajr Pro in Google Play.</li>
+        <li>Open Settings → <span class="ui" lang="ar">فجر Pro</span> → <span class="ui" lang="ar">استعادة المشتريات</span> (restore purchases).</li>
+      </ol>
+      <p class="small muted">If a payment is still pending, Fajr Pro turns on as soon as Google Play confirms it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="en-manage">
+  <h2><span class="num">11</span>Manage or cancel your subscription</h2>
+  <p>Subscriptions are managed by Apple or Google, not by us. <strong>Deleting the app does not cancel your subscription.</strong></p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <ul>
+        <li>In the app: Settings → <span class="ui">Fajr Pro</span> → <span class="ui">Manage Subscriptions</span>.</li>
+        <li>Or on your iPhone: Settings → your name → Subscriptions → Fajr Wake.</li>
+        <li>Or on the web: <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>.</li>
+        <li>Cancel at least 24 hours before the current period ends to avoid the next renewal.</li>
+        <li>Refunds are decided by Apple: request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+      </ul>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <ul>
+        <li>In the app: Settings → <span class="ui" lang="ar">فجر Pro</span> → <span class="ui" lang="ar">إدارة الاشتراك</span> (manage subscription).</li>
+        <li>Or in the Google Play app: your profile picture → Payments &amp; subscriptions → Subscriptions.</li>
+        <li>Or on the web: <a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>.</li>
+        <li>Refunds follow Google Play's refund policies.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="en-troubleshooting">
+  <h2><span class="num">12</span>Troubleshooting alarms and permissions</h2>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">iPhone</span>
+      <h3>The alarm didn't ring</h3>
+      <ul>
+        <li>Check that the <span class="ui">Fajr alarm</span> switch is on and that a location is set.</li>
+        <li>Check that alarms are allowed: iPhone Settings → Fajr Wake → Alarms. The Home screen shows <span class="ui">Alarms are not allowed</span> when they are off.</li>
+        <li>Keep Fajr Wake visible: iOS does not ring alarms of apps that are hidden or locked behind Face ID.</li>
+        <li>Open the app at least once a week: Fajr alarms are scheduled up to 7 days ahead and topped up each time the app runs. If the Home screen says <span class="ui">iOS limited the number of alarms</span>, open the app every day or two.</li>
+        <li>Turn on Live Activities for Fajr Wake (iPhone Settings → Fajr Wake). The countdown before each re-ring needs them, and without it iOS may dismiss the alarm.</li>
+        <li>Use <span class="ui">Test alarm</span> on the Home screen to check, with the phone locked.</li>
+      </ul>
+      <h3>Other problems</h3>
+      <ul>
+        <li><strong>Quiet alarm while the app is open</strong>: with the app open, the alarm rings at the media volume. Turn the volume up.</li>
+        <li><strong>Steps not counted</strong>: allow Motion &amp; Fitness for Fajr Wake in Settings, and check that Fitness Tracking is on (Settings → Privacy &amp; Security → Motion &amp; Fitness). Keep the walking screen open and the phone in front of you.</li>
+        <li><strong>Camera challenge not working</strong>: allow the camera in iPhone Settings → Fajr Wake → Camera.</li>
+        <li><strong>Location not found</strong>: try again outside or near a window, or choose your city from the list.</li>
+        <li><strong>"Your time zone changed"</strong>: Fajr is still calculated for the place you set before. Update your location if you travelled.</li>
+        <li><strong>Fajr time differs from your mosque</strong>: choose the right calculation method, then adjust Fajr correction.</li>
+        <li><strong>Prices could not be loaded</strong>: check your internet connection and try again. Your alarm and the free QR code keep working without it.</li>
+      </ul>
+    </div>
+    <div class="platform"><span class="pill android">Android</span>
+      <h3>The alarm didn't ring</h3>
+      <ul>
+        <li>Complete every item in the Home screen's <span class="ui" lang="ar">أكمل الإعداد</span> card: notifications, exact alarms, showing over the lock screen, and battery optimisation set to "Don't optimise" for Fajr Wake.</li>
+        <li><strong>Infinix, Tecno and itel phones</strong> delay the alarm until the app is opened unless power-saving restrictions are lifted. In Settings, under <span class="ui" lang="ar">تشغيل المنبه والهاتف مقفل</span>, tap <span class="ui" lang="ar">إدارة توفير الطاقة للتطبيقات</span>, find Fajr Wake and choose "No restrictions" (<span lang="ar">لا يوجد قيود</span>). Also allow auto-start.</li>
+        <li>Check the phone's alarm volume. Use <span class="ui" lang="ar">معاينة الصوت</span> in Settings to hear it.</li>
+        <li>Use <span class="ui" lang="ar">تجربة المنبه</span> on the Home screen, with the screen locked, to check.</li>
+      </ul>
+      <h3>Other problems</h3>
+      <ul>
+        <li><strong>Steps not counted</strong>: allow Physical activity for the built-in step counter, or choose another challenge if the phone cannot count steps.</li>
+        <li><strong>Camera challenge not working</strong>: allow the camera in the app's settings. Push-ups and exercises need good light and your whole body in the picture.</li>
+        <li><strong>Location not found</strong>: turn on location (GPS) or choose your city from the list.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note info">If a challenge can't be completed while the alarm is ringing, use the <a href="#en-alarm">emergency stop</a>, then choose the QR code challenge until the problem is fixed.</p>
+</section>
+
+<section class="card contact" id="en-contact">
+  <h2><span class="num">13</span>Contact support</h2>
+  <p>Email us and we will reply as soon as we can, in Arabic or English.</p>
+  <p><a class="email" href="mailto:fajrwakeapp@gmail.com?subject=Fajr%20Wake%20support">fajrwakeapp@gmail.com</a></p>
+  <p>To help us help you, include:</p>
+  <ul>
+    <li>Your phone model and iOS or Android version.</li>
+    <li>The app version (iPhone: shown at the bottom of Settings).</li>
+    <li>What happened, when, and which challenge you use.</li>
+  </ul>
+  <p class="small muted">On iPhone you can also attach a report from Settings → <span class="ui">Diagnostics and test tools</span> → <span class="ui">Send report (plan, measurements, log)</span>. It includes your settings, saved coordinates and the app's event log, and is sent only if you choose to (see the <a href="../privacy/#en-leaves" data-internal>Privacy Policy</a>).</p>
+  <p class="small muted">Developer: Abdullah Alaklubi</p>
+</section>
+
+</div>
+</div>
+</div>
+
+<!-- ============================== ARABIC ============================== -->
+<div data-l="ar" lang="ar" dir="rtl">
+<section class="hero">
+  <img class="icon" src="../assets/icon-180.png" alt="أيقونة تطبيق فجر" width="84" height="84">
+  <p class="eyebrow">فجر | Fajr Wake · الدعم</p>
+  <h1>استيقظ لصلاة <em>الفجر</em>، ونحن هنا لمساعدتك</h1>
+  <p class="lead">أدلة لإعداد منبه الفجر وتحديات الاستيقاظ على الآيفون وأندرويد، واشتراك فجر Pro، وحلول للمشكلات الشائعة.</p>
+  <div class="actions">
+    <a class="btn primary" href="mailto:fajrwakeapp@gmail.com?subject=%D8%AF%D8%B9%D9%85%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D9%81%D8%AC%D8%B1">راسل الدعم</a>
+    <a class="btn" href="../privacy/" data-internal>سياسة الخصوصية</a>
+    <a class="btn" href="../terms/" data-internal>شروط الاستخدام</a>
+  </div>
+</section>
+
+<div class="layout with-toc">
+<details class="toc" open>
+  <summary>مواضيع المساعدة</summary>
+  <ol>
+    <li><a href="#ar-about">عن تطبيق فجر</a></li>
+    <li><a href="#ar-alarm">كيف يعمل منبه الفجر</a></li>
+    <li><a href="#ar-configure">إعداد المنبه</a></li>
+    <li><a href="#ar-qr">تحدي رمز QR</a></li>
+    <li><a href="#ar-walking">تحدي المشي</a></li>
+    <li><a href="#ar-barcode">الباركود وصورة المغسلة</a></li>
+    <li><a href="#ar-pushups">تمارين الضغط (تجريبي)</a></li>
+    <li><a href="#ar-double">التحدي المزدوج</a></li>
+    <li><a href="#ar-pro">اشتراك فجر Pro</a></li>
+    <li><a href="#ar-restore">استعادة المشتريات</a></li>
+    <li><a href="#ar-manage">إدارة الاشتراك أو إلغاؤه</a></li>
+    <li><a href="#ar-troubleshooting">حل المشكلات</a></li>
+    <li><a href="#ar-contact">التواصل مع الدعم</a></li>
+  </ol>
+</details>
+
+<div class="content">
+
+<section class="card" id="ar-about">
+  <h2><span class="num">١</span>عن تطبيق فجر</h2>
+  <p>«فجر» (<span lang="en" dir="ltr">Fajr Wake</span>) منبّه لصلاة الفجر. يحسب وقت الفجر لموقعك ويضبط المنبه تلقائيًا. وعندما يرن، لا يتوقف إلا بعد أن تُكمل تحديًا يُخرجك من السرير: مسح رمز QR طبعته، أو المشي، أو مسح باركود منتج، أو تصوير مغسلتك، أو التمرين.</p>
+  <ul>
+    <li>تُحسب أوقات الصلاة على هاتفك بمكتبة Adhan مفتوحة المصدر، وفق طريقة الحساب التي تختارها (مثل تقويم أم القرى في السعودية).</li>
+    <li>تقويم، وسلسلة أيام متتالية، وحمايات للسلسلة، وأوسمة عند ٧ و٣٠ و١٠٠ يوم، وإحصاءات تتابع تقدّمك.</li>
+    <li>لا تحتاج إلى حساب، وتبقى بياناتك في هاتفك (انظر <a href="../privacy/" data-internal>سياسة الخصوصية</a>).</li>
+  </ul>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span><p>يتطلب iOS 26 أو أحدث (يستخدم إطار AlarmKit من Apple). التطبيق بالعربية والإنجليزية ويتبع لغة الآيفون، ولتغييرها لهذا التطبيق وحده افتح الإعدادات ← فجر ← اللغة.</p></div>
+    <div class="platform"><span class="pill android">أندرويد</span><p>يتطلب أندرويد 8.0 أو أحدث. تطبيق أندرويد بالعربية حاليًا.</p></div>
+  </div>
+</section>
+
+<section class="card" id="ar-alarm">
+  <h2><span class="num">٢</span>كيف يعمل منبه الفجر</h2>
+  <p>تختار وقت رنين المنبه بالنسبة إلى الأذان (من ٦٠ دقيقة قبله إلى ٦٠ دقيقة بعده). ويحسب التطبيق كل يوم وقت الفجر لموقعك المحفوظ ويضبط المنبه.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ul>
+        <li>يستخدم المنبه إطار AlarmKit من Apple، فيرن حتى في الوضع الصامت ووضع التركيز.</li>
+        <li>تُجدول منبهات الفجر حتى ٧ أيام مقدمًا، ولكل منبه منبهات احتياطية خلفه، ويُتحقق منها وتُستكمل في كل مرة يعمل فيها التطبيق. تعرضها بطاقة <span class="ui">منبهات الفجر القادمة</span> في الشاشة الرئيسية.</li>
+        <li>الضغط على <strong>إيقاف</strong> في المنبه لا يُنهيه: يعاود الرنين بعد ثوانٍ (٥ ثوانٍ افتراضيًا) حتى تُكمل التحدي في التطبيق. افتح التطبيق (يفتح على التحدي افتراضيًا) وأكمله.</li>
+        <li>ما دام التطبيق مفتوحًا يواصل الرنين بنفسه <strong>بمستوى صوت الوسائط</strong>، ويتوقف مؤقتًا فقط أثناء مشيك أو تمارينك.</li>
+        <li>كحدّ أمان، ينتهي المنبه من تلقاء نفسه بعد ٣٠ دقيقة.</li>
+      </ul>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ul>
+        <li>يُضبط المنبه منبهًا دقيقًا ويظهر بملء الشاشة فوق شاشة القفل في وقته، ويُعاد ضبطه تلقائيًا بعد إعادة تشغيل الهاتف.</li>
+        <li>يواصل الرنين حتى تُكمل التحدي في شاشة المنبه، لساعة واحدة كحد أقصى.</li>
+        <li>يستخدم الصوت مستوى صوت المنبهات في هاتفك، ويمكنك اختيار النغمة ومستواها ورفعها تدريجيًا خلال ٣٠ ثانية.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>الإيقاف الطارئ</h3>
+  <p>إن تعذّر عليك إكمال التحدي فعلًا (مرض، سفر، عطل في الكاميرا أو المستشعر، فقدان الرمز)، يمكنك إنهاء المنبه دونه. لا يُحتسب ذلك اليوم ناجحًا، وتنقطع سلسلتك إلا إن كانت لديك حماية.</p>
+  <ul>
+    <li><span class="pill ios">آيفون</span> في شاشة التحدي اضغط <span class="ui">إيقاف طارئ</span> ثم أكّد. ودون فتح التطبيق، شغّل اختصار <span class="ui">إيقاف طارئ</span> من تطبيق الاختصارات.</li>
+    <li><span class="pill android">أندرويد</span> في شاشة المنبه اضغط <span class="ui">إيقاف طارئ</span>، وانتظر ٣٠ ثانية، ثم اضغط <span class="ui">إيقاف المنبه</span>.</li>
+  </ul>
+  <h3>السلسلة والحمايات</h3>
+  <p>كل فجر تُكمل فيه التحدي يزيد سلسلتك. وتكسب حماية للسلسلة بعد كل ٧ أيام ناجحة (حتى حمايتين). إن فاتك فجر أو استخدمت الإيقاف الطارئ تُستخدم حماية تلقائيًا فتبقى سلسلتك دون أن تزيد، ويمكنك إيقاف ذلك من الإعدادات. ولا تُحتسب تجارب المنبه أبدًا.</p>
+</section>
+
+<section class="card" id="ar-configure">
+  <h2><span class="num">٣</span>إعداد المنبه</h2>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ol>
+        <li>افتح التطبيق. تعرض بطاقة <span class="ui">أكمل الإعداد</span> في الشاشة الرئيسية ما ينقص.</li>
+        <li><strong>الموقع</strong>: الإعدادات (رمز الترس) ← <span class="ui">الموقع</span> ← <span class="ui">استخدم موقعي الحالي</span> أو <span class="ui">اختر مدينة</span> أو <span class="ui">إدخال الإحداثيات</span>.</li>
+        <li><strong>طريقة الحساب</strong>: الإعدادات ← <span class="ui">طريقة الحساب</span>. اختر الجهة التي تتبعها مساجد منطقتك، وإن كان مسجدك يؤذّن قبل الوقت أو بعده بدقائق فعدّل <span class="ui">تصحيح وقت الفجر</span>.</li>
+        <li><strong>وقت المنبه</strong>: الإعدادات ← <span class="ui">وقت المنبه</span>، بخطوات من ٥ دقائق قبل الأذان أو بعده.</li>
+        <li><strong>السماح بالمنبهات</strong>: في <span class="ui">أكمل الإعداد</span> اضغط «متابعة» بجانب <span class="ui">المنبهات</span> واسمح. واسمح أيضًا بـ <span class="ui">التذكيرات</span> (الإشعارات) ليذكّرك التطبيق قبل نفاد المنبهات المجدولة.</li>
+        <li><strong>التحدي</strong>: الشاشة الرئيسية ← <span class="ui">طريقة إيقاف المنبه</span>. رمز QR مختار افتراضيًا (انظر الأقسام التالية).</li>
+        <li>فعّل مفتاح <span class="ui">منبه الفجر</span> في الشاشة الرئيسية.</li>
+        <li><strong>جرّبه</strong>: الشاشة الرئيسية ← <span class="ui">تجربة المنبه</span> ← <span class="ui">بعد دقيقة</span>، ثم اقفل الهاتف وأوقفه بالتحدي.</li>
+      </ol>
+      <p class="small muted">في الإعدادات تتحكم خيارات ما بعد الإيقاف بسرعة معاودة الرنين بعد الإيقاف (من ٣ إلى ٣٠ ثانية)، وهل يُفتح التطبيق بعد الإيقاف، وهل يتأجل الرنين التالي والتطبيق مفتوح.</p>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ol>
+        <li>افتح التطبيق. تعرض بطاقة <span class="ui">أكمل الإعداد</span> في الشاشة الرئيسية الأذونات الناقصة: الإشعارات والكاميرا والمنبهات الدقيقة والظهور فوق شاشة القفل وتحسين البطارية.</li>
+        <li><strong>الموقع</strong>: <span class="ui">الإعدادات</span> ← <span class="ui">استخدم موقعي الحالي</span> أو <span class="ui">اختر مدينة من القائمة</span> أو <span class="ui">إدخال الإحداثيات يدويًا</span>.</li>
+        <li><strong>طريقة الحساب والتصحيح</strong>: الإعدادات ← <span class="ui">طريقة الحساب</span> و<span class="ui">تصحيح وقت الفجر</span>.</li>
+        <li><strong>وقت المنبه</strong>: الإعدادات ← <span class="ui">وقت المنبه</span>، بخطوات من ٥ دقائق.</li>
+        <li><strong>الصوت</strong>: الإعدادات ← <span class="ui">صوت المنبه</span>، مع <span class="ui">معاينة الصوت</span>.</li>
+        <li><strong>التحدي</strong>: الشاشة الرئيسية ← <span class="ui">طريقة إيقاف المنبه</span>.</li>
+        <li>فعّل مفتاح <span class="ui">منبه الفجر</span> في الشاشة الرئيسية.</li>
+        <li><strong>جرّبه</strong>: الشاشة الرئيسية ← <span class="ui">تجربة المنبه</span>. يرن بعد ١٠ ثوانٍ، ويمكنك قفل الشاشة.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="ar-qr">
+  <h2><span class="num">٤</span>تحدي رمز QR <span class="pill both" style="font-size:12px">مجاني</span></h2>
+  <p>ينشئ «فجر» رمز QR خاصًا بك وحدك. اطبعه وألصقه بجانب مغسلة الحمام بعيدًا عن سريرك، ولن يتوقف المنبه إلا عندما تمسحه، أي بعد أن تنهض فعلًا.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ol>
+        <li>الإعدادات ← <span class="ui">رمز QR الخاص بي</span> ← <span class="ui">إنشاء رمزي الخاص</span>. وإن كان لديك رمز تريد استخدامه فاضغط <span class="ui">استخدام رمز QR لديّ</span> وامسحه.</li>
+        <li>اضغط <span class="ui">طباعة</span>، أو <span class="ui">مشاركة أو حفظ</span> لإرساله لنفسك أو حفظه في الصور.</li>
+        <li>ألصق الرمز المطبوع بجانب المغسلة، ثم اضغط <span class="ui">اختبار المسح</span> للتأكد من أن الكاميرا تقرؤه في إضاءة الحمام.</li>
+        <li>اسمح بالكاميرا عند الطلب.</li>
+      </ol>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ol>
+        <li>افتح <span class="ui">طريقة إيقاف المنبه</span> واختر رمز QR، ثم <span class="ui">إنشاء رمزي الخاص</span>.</li>
+        <li>اطبعه أو شاركه أو احفظه في المعرض (الصور ← FajrWake). لا يمكن مسحه من شاشة الهاتف نفسه.</li>
+        <li>ألصقه بجانب المغسلة واضغط <span class="ui">اختبار المسح</span>.</li>
+      </ol>
+    </div>
+  </div>
+  <p class="note">إنشاء رمز جديد يوقف عمل الرمز المطبوع القديم، فاطبع الجديد. وأي نسخة من الرمز نفسه تعمل.</p>
+</section>
+
+<section class="card" id="ar-walking">
+  <h2><span class="num">٥</span>تحدي المشي <span class="pill both" style="font-size:12px">فجر Pro</span></h2>
+  <p>امشِ عددًا من الخطوات لإيقاف المنبه، إلى الحمام للوضوء مثلًا. تختار من ١٠ إلى ٢٠٠ خطوة (٣٠ افتراضيًا). يبدأ العدّ من الصفر عند رنين المنبه، ولا تُحتسب الخطوات السابقة أبدًا.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ol>
+        <li>الإعدادات ← <span class="ui">المشي</span>، اضغط <span class="ui">السماح بعدّ الخطوات</span> واسمح بـ <span class="ui">الحركة واللياقة</span>، ثم اختر <span class="ui">عدد الخطوات المطلوبة</span>.</li>
+        <li>جرّب <span class="ui">تجربة عدّ الخطوات</span> للتأكد من أن الآيفون يعدّ خطواتك.</li>
+        <li>عند رنين المنبه افتح التطبيق وامشِ، والهاتف أمامك كما لو كنت تقرأ منه. يبدأ العدّ بعد خطواتك الأولى.</li>
+      </ol>
+      <p class="small muted">أبقِ التطبيق مفتوحًا أثناء المشي: لا تُحتسب إلا الخطوات وشاشة المشي مفتوحة. ولا يُحتسب هزّ الهاتف مشيًا.</p>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ol>
+        <li>في <span class="ui">طريقة إيقاف المنبه</span> اختر المشي وحدّد <span class="ui">عدد الخطوات</span>.</li>
+        <li>إن كان في هاتفك عدّاد خطوات مدمج فاضغط <span class="ui">السماح بالنشاط البدني</span> لاستخدامه، وإلا يُستخدم مستشعر الحركة.</li>
+        <li>عند رنين المنبه امشِ حتى يكتمل العدد.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="ar-barcode">
+  <h2><span class="num">٦</span>تحديا الباركود وصورة المغسلة <span class="pill both" style="font-size:12px">فجر Pro</span></h2>
+  <h3>باركود منتج</h3>
+  <p>اختر منتجًا يبقى دائمًا في الحمام، مثل معجون الأسنان أو الصابون، وسجّل الباركود الخاص به. وعند رنين المنبه لن يتوقف إلا عندما تمسح ذلك الباركود. والباركود يدل على نوع المنتج، فأي منتج مطابق (بالباركود نفسه) يعمل أيضًا.</p>
+  <ul>
+    <li><span class="pill ios">آيفون</span> الإعدادات ← <span class="ui">باركود منتج</span> ← <span class="ui">مسح باركود منتج</span>، ثم <span class="ui">اختبار المسح</span>. ولتغييره لاحقًا: <span class="ui">استبداله بمنتج آخر</span>.</li>
+    <li><span class="pill android">أندرويد</span> في <span class="ui">طريقة إيقاف المنبه</span> اختر الباركود، ثم <span class="ui">تسجيل باركود منتج</span> و<span class="ui">اختبار المسح</span>.</li>
+  </ul>
+  <h3>صورة المغسلة</h3>
+  <p>صوّر مغسلة الحمام، وعند رنين المنبه صوّر المغسلة نفسها مجددًا لإيقافه. تُقارَن الصور على هاتفك ولا تُرفع أبدًا.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ol>
+        <li>الإعدادات ← <span class="ui">صورة المغسلة</span> ← <span class="ui">تسجيل مغسلتي</span>.</li>
+        <li>صوّر مغسلتك ثلاث مرات، ثم بعض الأشياء الأخرى، ليتعلم التطبيق تمييز مغسلتك.</li>
+        <li>حين يخبرك بأن مغسلتك جاهزة احفظها. واستخدم <span class="ui">الاختبار والمعايرة</span> لإضافة صور إن لم يستطع تمييزها بعد.</li>
+      </ol>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ol>
+        <li>في <span class="ui">طريقة إيقاف المنبه</span> اختر صورة المغسلة، ثم <span class="ui">التقاط صورة مرجعية</span>.</li>
+        <li>جرّب <span class="ui">اختبار المطابقة</span> عدة مرات قبل الاعتماد عليها.</li>
+      </ol>
+    </div>
+  </div>
+  <p class="note">التقط الصور المرجعية بالإضاءة التي ستكون عند الفجر (أشعل ضوء الحمام)، وأظهر الحوض والصنبور وما حولهما. التغييرات الكبيرة (مناشف جديدة، مرآة منقولة، إضاءة مختلفة جدًا) قد تمنع المطابقة، فسجّل من جديد. وقد تُقبل صورة لمغسلتك معروضة على شاشة أو مطبوعة، لأن الكاميرا لا تستطيع إثبات وجودك هناك.</p>
+</section>
+
+<section class="card" id="ar-pushups">
+  <h2><span class="num">٧</span>تمارين الضغط (تجريبي) <span class="pill both" style="font-size:12px">فجر Pro</span></h2>
+  <p>تراقبك الكاميرا من الجانب وتعدّ تمارين الضغط (من ٣ إلى ٢٠، و٣ افتراضيًا). هذا التحدي تجريبي، فجرّبه عدة مرات قبل الاعتماد عليه. تمرّن فقط إن كنت قادرًا، وتوقف إن شعرت بألم.</p>
+  <ol>
+    <li>ضع الهاتف على الأرض واقفًا (أسنده إلى جدار أو صندوق أو كتاب) على بعد مترين تقريبًا إلى جانبك، والكاميرا نحوك.</li>
+    <li>يجب أن يظهر جسمك كاملًا من الجانب: الكتفان واليدان والوركان والقدمان. وأشعل الضوء.</li>
+    <li>تُحتسب المرة عندما تنزل حتى تنثني مرفقاك، ثم تدفع حتى تستقيم ذراعاك، وجسمك مستقيم. ولا تلمس الهاتف أثناء التمرين.</li>
+  </ol>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span><p>الإعدادات ← <span class="ui">تمارين الضغط</span>: اختر الكاميرا الأمامية أو الخلفية وعدد التمارين. تتيح لك <span class="ui">تجربة عدّ تمارين الضغط</span> التدرّب، وتقيس <span class="ui">المعايرة بتماريني</span> تمارينك أنت لتُحتسب كل مرة كاملة. لا تستطيع الكاميرا العدّ والشاشة مطفأة، وتبقى التمارين المحسوبة.</p></div>
+    <div class="platform"><span class="pill android">أندرويد</span><p>في <span class="ui">طريقة إيقاف المنبه</span> اختر تحدي التمرين. يتيح إلى جانب الضغط القرفصاء والجلوس والوقوف (من ٥ إلى ٥٠ تكرارًا) بالكاميرا الأمامية. جرّبه بـ <span class="ui">جرّب التمرين الآن</span>. وإن لم تستطع الضغط صباحًا، فشاشة المنبه تتيح لك التبديل إلى الجلوس والوقوف.</p></div>
+  </div>
+</section>
+
+<section class="card" id="ar-double">
+  <h2><span class="num">٨</span>التحدي المزدوج <span class="pill both" style="font-size:12px">فجر Pro</span></h2>
+  <p>تحدّيان مختلفان، واحد بعد الآخر، كالمشي ثم مسح رمز QR. لا يتوقف المنبه إلا بعد إكمالهما بالترتيب، وحين يكتمل الأول يُفتح الثاني.</p>
+  <ul>
+    <li><span class="pill ios">آيفون</span> الشاشة الرئيسية ← <span class="ui">طريقة إيقاف المنبه</span> ← <span class="ui">تحدٍّ مزدوج</span>. اختر التحديين، واستخدم <span class="ui">عكس الترتيب</span> عند الحاجة، ثم <span class="ui">استخدام هذا التحدي المزدوج</span>. ويُبقي <span class="ui">إيقاف التحدي المزدوج</span> التحدي الأول وحده.</li>
+    <li><span class="pill android">أندرويد</span> في <span class="ui">طريقة إيقاف المنبه</span> اختر <span class="ui">تحدٍّ مزدوج</span>، واضغط كل مرحلة واختر تحديها.</li>
+  </ul>
+  <p class="small muted">يحتاج كل تحدٍّ من الاثنين إلى إعداده الخاص (مثل رمز QR مطبوع وإذن الحركة واللياقة).</p>
+</section>
+
+<section class="card" id="ar-pro">
+  <h2><span class="num">٩</span>اشتراك فجر Pro</h2>
+  <div class="summary-grid">
+    <div><b>مجاني دائمًا</b>مواقيت الصلاة، ومنبه الفجر، وتحدي رمز QR، والإيقاف الطارئ، وسلسلتك وتقويمك وأوسمتك وإحصاءاتك.</div>
+    <div><b>مع فجر Pro</b>تحديات المشي وباركود المنتج وصورة المغسلة وتمارين الضغط (التمرين)، والتحدي المزدوج.</div>
+  </div>
+  <h3>الخطط والأسعار</h3>
+  <ul>
+    <li><strong>فجر Pro الشهري</strong> و<strong>فجر Pro السنوي</strong>، اشتراكان يتجددان تلقائيًا.</li>
+    <li>في السعودية السعر <strong>٩٫٩٩ ريال شهريًا</strong> و<strong>٥٩٫٩٩ ريال سنويًا</strong>. وفي غيرها يعرض App Store أو Google Play السعر بعملتك المحلية. والسعر المعروض في التطبيق قبل التأكيد هو ما تدفعه.</li>
+    <li>لا توجد فترة تجربة مجانية.</li>
+  </ul>
+  <h3>شروط الدفع</h3>
+  <ul>
+    <li><span class="pill ios">آيفون</span> يُخصم المبلغ من حساب Apple عند تأكيد الشراء. ويتجدد الاشتراك تلقائيًا بالسعر نفسه لكل فترة ما لم يُوقف التجديد التلقائي قبل نهاية الفترة الحالية بـ ٢٤ ساعة على الأقل، ويُخصم التجديد خلال الـ ٢٤ ساعة السابقة لنهايتها.</li>
+    <li><span class="pill android">أندرويد</span> يُخصم المبلغ من حسابك في Google Play، ويتجدد الاشتراك تلقائيًا وفق شروط Google Play حتى تلغيه.</li>
+    <li>بعد الإلغاء يبقى فجر Pro فعّالًا حتى نهاية الفترة التي دفعتها.</li>
+  </ul>
+  <h3>حين لا يكون فجر Pro فعّالًا</h3>
+  <p>يبقى المنبه يرن. إن اخترت تحديًا من فجر Pro، يطلب المنبه رمز QR المجاني بدلًا منه، وتبقى إعداداتك محفوظة لحين تفعيل فجر Pro مجددًا. وإن لم تكن أنشأت رمز QR بعد، يُبقي المنبه تحديك المختار حتى يمكن إيقافه، فأنشئ رمزك المجاني لتكون مستعدًا.</p>
+  <p>للاشتراك: <span class="pill ios">آيفون</span> الإعدادات ← <span class="ui">فجر Pro</span> ← اختر خطة ← <span class="ui">اشترك</span>. <span class="pill android">أندرويد</span> الإعدادات ← <span class="ui">فجر Pro</span> ← اختر خطة ← <span class="ui">اشترك الآن</span>.</p>
+</section>
+
+<section class="card" id="ar-restore">
+  <h2><span class="num">١٠</span>استعادة المشتريات</h2>
+  <p>لا تحتاج إلى حساب في «فجر»: فجر Pro مرتبط بحساب Apple أو حساب Google. بعد إعادة التثبيت، أو على هاتف جديد بالحساب نفسه، يعود عادةً من تلقاء نفسه.</p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ol>
+        <li>تأكد من تسجيل الدخول إلى App Store بحساب Apple الذي اشترى فجر Pro.</li>
+        <li>افتح الإعدادات ← <span class="ui">فجر Pro</span> ← <span class="ui">استعادة المشتريات</span>. يستخدم ذلك StoreKit من Apple لمزامنة مشترياتك مع App Store.</li>
+      </ol>
+      <p class="small muted">إن قال التطبيق إنه لم يجد اشتراكًا فعّالًا، فالاشتراك منتهٍ أو مرتبط بحساب Apple آخر. وإن تعذّر الوصول إلى App Store فتحقق من اتصالك وحاول مجددًا.</p>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ol>
+        <li>تأكد من أن الهاتف يستخدم حساب Google الذي اشترى فجر Pro في Google Play.</li>
+        <li>افتح الإعدادات ← <span class="ui">فجر Pro</span> ← <span class="ui">استعادة المشتريات</span>.</li>
+      </ol>
+      <p class="small muted">إن كانت عملية دفع لم تكتمل بعد، يُفعَّل فجر Pro فور تأكيد Google Play لها.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="ar-manage">
+  <h2><span class="num">١١</span>إدارة الاشتراك أو إلغاؤه</h2>
+  <p>تدير Apple أو Google الاشتراكات، لا نحن. <strong>حذف التطبيق لا يلغي اشتراكك.</strong></p>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <ul>
+        <li>من التطبيق: الإعدادات ← <span class="ui">فجر Pro</span> ← <span class="ui">إدارة الاشتراكات</span>.</li>
+        <li>أو من الآيفون: الإعدادات ← اسمك ← الاشتراكات ← فجر.</li>
+        <li>أو من الويب: <a href="https://apps.apple.com/account/subscriptions" class="ltr">apps.apple.com/account/subscriptions</a>.</li>
+        <li>ألغِ قبل نهاية الفترة الحالية بـ ٢٤ ساعة على الأقل لتجنّب التجديد التالي.</li>
+        <li>تقرّر Apple الاسترداد، ويمكنك طلبه من <a href="https://reportaproblem.apple.com" class="ltr">reportaproblem.apple.com</a>.</li>
+      </ul>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <ul>
+        <li>من التطبيق: الإعدادات ← <span class="ui">فجر Pro</span> ← <span class="ui">إدارة الاشتراك</span>.</li>
+        <li>أو من تطبيق Google Play: صورة ملفك الشخصي ← الدفعات والاشتراكات ← الاشتراكات.</li>
+        <li>أو من الويب: <a href="https://play.google.com/store/account/subscriptions" class="ltr">play.google.com/store/account/subscriptions</a>.</li>
+        <li>يخضع الاسترداد لسياسات Google Play.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="ar-troubleshooting">
+  <h2><span class="num">١٢</span>حل مشكلات المنبه والأذونات</h2>
+  <div class="platforms">
+    <div class="platform"><span class="pill ios">آيفون</span>
+      <h3>لم يرن المنبه</h3>
+      <ul>
+        <li>تأكد من تفعيل مفتاح <span class="ui">منبه الفجر</span> ومن تحديد الموقع.</li>
+        <li>تأكد من السماح بالمنبهات: إعدادات الآيفون ← فجر ← المنبهات. وتعرض الشاشة الرئيسية تنبيهًا حين تكون غير مسموحة.</li>
+        <li>أبقِ تطبيق «فجر» ظاهرًا: لا يُرنّ iOS منبهات التطبيقات المخفية أو المقفلة ببصمة الوجه.</li>
+        <li>افتح التطبيق مرة في الأسبوع على الأقل: تُجدول منبهات الفجر حتى ٧ أيام مقدمًا وتُستكمل في كل مرة يعمل فيها التطبيق. وإن ظهر أن iOS حدّ عدد المنبهات، فافتح التطبيق كل يوم أو يومين.</li>
+        <li>فعّل <span class="ui">الأنشطة المباشرة</span> لتطبيق فجر (إعدادات الآيفون ← فجر)، فالعدّ التنازلي قبل كل معاودة رنين يحتاجها، وقد يُنهي iOS المنبه بدونها.</li>
+        <li>استخدم <span class="ui">تجربة المنبه</span> في الشاشة الرئيسية للتحقق والهاتف مقفل.</li>
+      </ul>
+      <h3>مشكلات أخرى</h3>
+      <ul>
+        <li><strong>صوت منخفض والتطبيق مفتوح</strong>: والتطبيق مفتوح يرن المنبه بمستوى صوت الوسائط، فارفع الصوت.</li>
+        <li><strong>الخطوات لا تُحتسب</strong>: اسمح بـ «الحركة واللياقة» لتطبيق فجر في الإعدادات، وتأكد من تفعيل «تتبّع اللياقة» (الإعدادات ← الخصوصية والأمن ← الحركة واللياقة). وأبقِ شاشة المشي مفتوحة والهاتف أمامك.</li>
+        <li><strong>تحدي الكاميرا لا يعمل</strong>: اسمح بالكاميرا من إعدادات الآيفون ← فجر ← الكاميرا.</li>
+        <li><strong>تعذّر تحديد الموقع</strong>: حاول مجددًا في الخارج أو قرب نافذة، أو اختر مدينتك من القائمة.</li>
+        <li><strong>«تغيّرت منطقتك الزمنية»</strong>: ما زال الفجر محسوبًا للمكان الذي حددته سابقًا، فحدّث موقعك إن سافرت.</li>
+        <li><strong>وقت الفجر يختلف عن مسجدك</strong>: اختر طريقة الحساب الصحيحة، ثم عدّل تصحيح وقت الفجر.</li>
+        <li><strong>تعذّر تحميل الأسعار</strong>: تحقق من اتصالك بالإنترنت وحاول مجددًا. يبقى المنبه ورمز QR المجاني يعملان دونه.</li>
+      </ul>
+    </div>
+    <div class="platform"><span class="pill android">أندرويد</span>
+      <h3>لم يرن المنبه</h3>
+      <ul>
+        <li>أكمل كل بنود بطاقة <span class="ui">أكمل الإعداد</span> في الشاشة الرئيسية: الإشعارات، والمنبهات الدقيقة، والظهور فوق شاشة القفل، وتحسين البطارية على «عدم التحسين» لتطبيق فجر.</li>
+        <li><strong>هواتف إنفينكس وتكنو وآيتل</strong> تؤخّر المنبه حتى تفتح التطبيق ما لم تُرفع عنه قيود توفير الطاقة. في الإعدادات تحت <span class="ui">تشغيل المنبه والهاتف مقفل</span> اضغط <span class="ui">إدارة توفير الطاقة للتطبيقات</span>، وابحث عن «فجر»، ثم اختر «لا يوجد قيود». واسمح أيضًا بالتشغيل التلقائي.</li>
+        <li>تحقق من مستوى صوت المنبهات في الهاتف، واستخدم <span class="ui">معاينة الصوت</span> في الإعدادات لسماعه.</li>
+        <li>استخدم <span class="ui">تجربة المنبه</span> في الشاشة الرئيسية للتحقق والشاشة مقفلة.</li>
+      </ul>
+      <h3>مشكلات أخرى</h3>
+      <ul>
+        <li><strong>الخطوات لا تُحتسب</strong>: اسمح بـ «النشاط البدني» لعدّاد الخطوات المدمج، أو اختر تحديًا آخر إن كان الهاتف لا يستطيع عدّ الخطوات.</li>
+        <li><strong>تحدي الكاميرا لا يعمل</strong>: اسمح بالكاميرا من إعدادات التطبيق. وتحتاج تمارين الضغط والتمارين الأخرى إلى إضاءة جيدة وظهور جسمك كاملًا.</li>
+        <li><strong>تعذّر تحديد الموقع</strong>: فعّل الموقع (GPS) أو اختر مدينتك من القائمة.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note info">إن تعذّر إكمال التحدي والمنبه يرن، فاستخدم <a href="#ar-alarm">الإيقاف الطارئ</a>، ثم اختر تحدي رمز QR حتى تُحل المشكلة.</p>
+</section>
+
+<section class="card contact" id="ar-contact">
+  <h2><span class="num">١٣</span>التواصل مع الدعم</h2>
+  <p>راسلنا بالبريد وسنرد في أقرب وقت ممكن، بالعربية أو الإنجليزية.</p>
+  <p><a class="email ltr" href="mailto:fajrwakeapp@gmail.com?subject=%D8%AF%D8%B9%D9%85%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D9%81%D8%AC%D8%B1">fajrwakeapp@gmail.com</a></p>
+  <p>لنساعدك أسرع، اذكر:</p>
+  <ul>
+    <li>طراز هاتفك وإصدار iOS أو أندرويد.</li>
+    <li>إصدار التطبيق (على الآيفون يظهر أسفل الإعدادات).</li>
+    <li>ما حدث ومتى، والتحدي الذي تستخدمه.</li>
+  </ul>
+  <p class="small muted">على الآيفون يمكنك أيضًا إرفاق تقرير من الإعدادات ← <span class="ui">التشخيص وأدوات الاختبار</span> ← <span class="ui">إرسال تقرير (الجدولة والقياسات والسجل)</span>. يتضمن إعداداتك وإحداثيات موقعك المحفوظ وسجل أحداث التطبيق، ولا يُرسل إلا إن اخترت ذلك (انظر <a href="../privacy/#ar-leaves" data-internal>سياسة الخصوصية</a>).</p>
+  <p class="small muted">المطوّر: <span lang="en" dir="ltr">Abdullah Alaklubi</span></p>
+</section>
+
+</div>
+</div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="bar">
+    <div class="links">
+      <a href="../support/" data-internal><span data-l="en">Support</span><span data-l="ar" lang="ar">الدعم</span></a>
+      <a href="../privacy/" data-internal><span data-l="en">Privacy Policy</span><span data-l="ar" lang="ar">سياسة الخصوصية</span></a>
+      <a href="../terms/" data-internal><span data-l="en">Terms of Use</span><span data-l="ar" lang="ar">شروط الاستخدام</span></a>
+      <a href="mailto:fajrwakeapp@gmail.com">fajrwakeapp@gmail.com</a>
+    </div>
+    <span>© 2026 Abdullah Alaklubi</span>
+  </div>
+</footer>
+</body>
+</html>
