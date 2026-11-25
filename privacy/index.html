@@ -36,7 +36,7 @@
   <p class="eyebrow">Fajr Wake | فجر</p>
   <h1>Privacy <em>Policy</em></h1>
   <p class="lead">How Fajr Wake handles your information on iPhone and Android: what stays on your phone, what can leave it, and why.</p>
-  <p class="meta">Last updated: 23 November 2026 · Developer: Abdullah Alaklubi · Contact: <a href="mailto:fajrwakeapp@gmail.com">fajrwakeapp@gmail.com</a></p>
+  <p class="meta">Last updated: 26 November 2026 · Developer: Abdullah Alaklubi · Contact: <a href="mailto:fajrwakeapp@gmail.com">fajrwakeapp@gmail.com</a></p>
 </section>
 
 <div class="layout with-toc">
@@ -67,10 +67,10 @@
   <div class="summary-grid">
     <div><b>No account</b>You never sign up or sign in. We have no user accounts.</div>
     <div><b>No server of our own</b>Your settings, location, photos and wake-up history stay on your phone. We do not receive them.</div>
-    <div><b>No ads, no tracking</b>The apps contain no advertising, analytics or tracking code, and we sell no data.</div>
+    <div><b>No ads, no tracking</b>The apps contain no advertising or tracking code, and we sell no data. The iPhone app (from version 1.0.2) uses Superwall analytics to count users, app sessions and purchases (section 7).</div>
     <div><b>Purchases by Apple or Google</b>Fajr Pro is bought through the App Store or Google Play. We never see your payment details.</div>
   </div>
-  <p class="small muted" style="margin-top:12px">Exceptions, explained below: on Android, Google's ML Kit library sends Google limited diagnostic data (never images). Your phone's backups may include app data. Anything you choose to share, such as your QR code image or an email to us, leaves your phone because you sent it. The iPhone app cannot send or export its diagnostic log or test results.</p>
+  <p class="small muted" style="margin-top:12px">Exceptions, explained below: on iPhone, Superwall receives app usage and purchase analytics (never your location, prayer times, pictures or challenges); on Android, Google's ML Kit library sends Google limited diagnostic data (never images). Your phone's backups may include app data. Anything you choose to share, such as your QR code image or an email to us, leaves your phone because you sent it. The iPhone app cannot send or export its diagnostic log or test results.</p>
 </section>
 
 <section class="card" id="en-scope">
@@ -166,7 +166,7 @@
       <ul>
         <li><strong>Payment</strong> happens in Apple's purchase sheet and is processed entirely by Apple. Neither the app nor we ever see your name, email address or payment details.</li>
         <li><strong>What the app receives from Apple</strong> (through StoreKit, on the iPhone): the plans and their prices in your currency, and Apple-signed information about your Fajr Pro subscription: the plan, whether it is active, its expiry or renewal date, whether it renews automatically, and whether a payment is being retried or was refunded. StoreKit checks Apple's signature on the iPhone.</li>
-        <li><strong>What the app stores</strong>: whether Fajr Pro is active, the plan, its expiry date, its renewal state and when it was last checked. It does not send any purchase information to us or to anyone else.</li>
+        <li><strong>What the app stores</strong>: whether Fajr Pro is active, the plan, its expiry date, its renewal state and when it was last checked. From version 1.0.2, Superwall receives your in-app purchase transactions for revenue analytics (section 7); nothing else about your purchases is sent to anyone.</li>
         <li><strong>Restore Purchases</strong> asks Apple's StoreKit to sync your purchases with the App Store.</li>
         <li><strong>What we see</strong>: App Store Connect gives us sales and subscription reports (for example, numbers of subscriptions by plan and country). They do not identify you.</li>
       </ul>
@@ -186,11 +186,12 @@
 
 <section class="card" id="en-leaves">
   <h2><span class="num">7</span>When information leaves your device</h2>
-  <h3>Automatically, through Apple or Google</h3>
+  <h3>Automatically, through Apple, Google or Superwall</h3>
   <ul>
     <li><span class="pill android">Android</span> <strong>Google ML Kit</strong> (QR, barcode and pose detection) runs on the phone but sends Google diagnostic and usage information: device model, Android version, app name and version, per-installation identifiers that are not meant to identify you, and performance data. No images are sent. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>.</li>
     <li><span class="pill both">Both</span> <strong>Store purchases</strong>: the app exchanges subscription information with the App Store or Google Play as described in section 6, and the store communicates with Apple's or Google's servers.</li>
     <li><span class="pill both">Both</span> <strong>Backups</strong>: if backup is turned on, iCloud Backup (or a backup to your computer) or Android's Google backup may copy the app's data to your account so it can be restored on a new phone. On iPhone, sink photos are excluded; on Android, the Fajr Pro status is excluded. This follows your phone's settings and you can turn it off there.</li>
+    <li><span class="pill ios">iPhone</span> <strong>Superwall analytics</strong> (from version 1.0.2): to count new users, app sessions, active users, purchases and revenue, the app includes Superwall's SDK. It sends Superwall a random ID it creates for the app, your iPhone's identifier for this developer's apps (IDFV, not the advertising identifier), device and app details (such as model, iOS version, language, time zone and app version), when the app is opened and closed, and your in-app purchase transactions from Apple (product, price, currency, date). Superwall's servers may derive an approximate region from your IP address. The app does not give Superwall your name, email or any account, and Superwall never receives your location, prayer times, steps, camera pictures, barcodes, challenges, alarms or diagnostic log. It is not used for advertising or to track you, and the app never asks for tracking permission. If the network is unavailable, the app and its alarms work exactly the same. <a href="https://superwall.com/legal/privacy-policy">Superwall Privacy Policy</a>.</li>
     <li><span class="pill ios">iPhone</span> <strong>Crash reports from Apple</strong>: if you turned on "Share With App Developers" in your iPhone's Analytics settings, Apple may share crash and usage reports about the app with us. They do not include your name or contact details. You can turn this off in Settings → Privacy &amp; Security → Analytics &amp; Improvements.</li>
   </ul>
   <h3>Only when you choose to share</h3>
@@ -207,9 +208,10 @@
   <ul>
     <li><strong>Apple</strong>: App Store, StoreKit purchases, iCloud backup and iPhone services. <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
     <li><strong>Google</strong>: Google Play, Play Billing, ML Kit (Android), Android backup, and Gmail, which hosts our support mailbox. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>Superwall</strong> (Superwall, Inc.): analytics and revenue reporting in the iPhone app, from version 1.0.2 (section 7). <a href="https://superwall.com/legal/privacy-policy">Superwall Privacy Policy</a>.</li>
     <li><strong>GitHub</strong>: hosts this website. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
   </ul>
-  <p>Each handles data under its own policy. We use no other third-party services: no advertising, analytics, crash-reporting or tracking SDKs.</p>
+  <p>Each handles data under its own policy. We use no other third-party services: no advertising, crash-reporting or tracking SDKs, and no analytics SDK other than Superwall in the iPhone app.</p>
 </section>
 
 <section class="card" id="en-retention">
@@ -219,7 +221,8 @@
     <li><strong>Backups</strong> are kept by Apple or Google under your backup settings and their policies.</li>
     <li><strong>Emails</strong> you send us are kept only as long as needed to help you and keep a record of support. Ask us and we will delete them.</li>
     <li><strong>Purchase records</strong> are kept by Apple or Google and in App Store Connect or Play Console under their policies. Deleting the app does not cancel a subscription: see <a href="../support/#en-manage" data-internal>how to cancel</a>.</li>
-    <li>We hold no account and no app data about you, so there is nothing else for us to delete.</li>
+    <li><strong>Analytics</strong> (iPhone): Superwall keeps the analytics data under its own retention policy. It is tied to random identifiers, not to your name; to ask for it to be deleted, write to us. Deleting the app stops any further analytics.</li>
+    <li>We hold no account and no other app data about you, so there is nothing else for us to delete.</li>
   </ul>
 </section>
 
@@ -230,7 +233,7 @@
 
 <section class="card" id="en-children">
   <h2><span class="num">11</span>Children</h2>
-  <p>Fajr Wake is not directed at children under 13, and we do not knowingly collect information from children. The apps collect no personal information from anyone into our hands.</p>
+  <p>Fajr Wake is not directed at children under 13, and we do not knowingly collect information from children. The apps never ask anyone for a name, email address or other contact details; the only data collected is the iPhone app's analytics described in section 7.</p>
 </section>
 
 <section class="card" id="en-choices">
@@ -266,7 +269,7 @@
   <p class="eyebrow">فجر | Fajr Wake</p>
   <h1>سياسة <em>الخصوصية</em></h1>
   <p class="lead">كيف يتعامل تطبيق «فجر» مع معلوماتك على الآيفون وأندرويد: ما يبقى في هاتفك، وما قد يغادره، ولماذا.</p>
-  <p class="meta">آخر تحديث: ٢٣ نوفمبر ٢٠٢٦<br>المطوّر: <span lang="en" dir="ltr">Abdullah Alaklubi</span><br>للتواصل: <a href="mailto:fajrwakeapp@gmail.com" class="ltr">fajrwakeapp@gmail.com</a></p>
+  <p class="meta">آخر تحديث: ٢٦ نوفمبر ٢٠٢٦<br>المطوّر: <span lang="en" dir="ltr">Abdullah Alaklubi</span><br>للتواصل: <a href="mailto:fajrwakeapp@gmail.com" class="ltr">fajrwakeapp@gmail.com</a></p>
 </section>
 
 <div class="layout with-toc">
@@ -297,10 +300,10 @@
   <div class="summary-grid">
     <div><b>بلا حساب</b>لا تسجيل ولا تسجيل دخول، وليس لدينا حسابات مستخدمين.</div>
     <div><b>بلا خادم خاص بنا</b>إعداداتك وموقعك وصورك وسجل استيقاظك تبقى في هاتفك، ولا نستلمها.</div>
-    <div><b>بلا إعلانات ولا تتبّع</b>لا يحتوي التطبيقان على أي شيفرة إعلانات أو تحليلات أو تتبّع، ولا نبيع أي بيانات.</div>
+    <div><b>بلا إعلانات ولا تتبّع</b>لا يحتوي التطبيقان على أي شيفرة إعلانات أو تتبّع، ولا نبيع أي بيانات. ويستخدم تطبيق الآيفون (من الإصدار 1.0.2) تحليلات Superwall لمعرفة عدد المستخدمين وجلسات الاستخدام والمشتريات (القسم ٧).</div>
     <div><b>الشراء عبر Apple أو Google</b>يُشترى فجر Pro من App Store أو Google Play، ولا نرى بيانات الدفع أبدًا.</div>
   </div>
-  <p class="small muted" style="margin-top:12px">استثناءات موضّحة أدناه: على أندرويد ترسل مكتبة ML Kit من Google بيانات تشخيصية محدودة إلى Google (ولا ترسل الصور أبدًا). وقد تتضمن النسخ الاحتياطية لهاتفك بيانات التطبيق. وما تختار مشاركته بنفسك، كصورة رمز QR الخاص بك أو رسالة بريد إلينا، يغادر هاتفك لأنك أرسلته. ولا يستطيع تطبيق الآيفون إرسال سجل التشخيص أو نتائج الاختبارات أو تصديرها.</p>
+  <p class="small muted" style="margin-top:12px">استثناءات موضّحة أدناه: على الآيفون تتلقى Superwall تحليلات الاستخدام والمشتريات (ولا تتلقى أبدًا موقعك أو أوقات الصلاة أو الصور أو التحديات)، وعلى أندرويد ترسل مكتبة ML Kit من Google بيانات تشخيصية محدودة إلى Google (ولا ترسل الصور أبدًا). وقد تتضمن النسخ الاحتياطية لهاتفك بيانات التطبيق. وما تختار مشاركته بنفسك، كصورة رمز QR الخاص بك أو رسالة بريد إلينا، يغادر هاتفك لأنك أرسلته. ولا يستطيع تطبيق الآيفون إرسال سجل التشخيص أو نتائج الاختبارات أو تصديرها.</p>
 </section>
 
 <section class="card" id="ar-scope">
@@ -396,7 +399,7 @@
       <ul>
         <li><strong>الدفع</strong> يتم في نافذة الشراء الخاصة بـ Apple وتتولاه Apple بالكامل. لا يرى التطبيق ولا نرى نحن اسمك أو بريدك أو بيانات الدفع أبدًا.</li>
         <li><strong>ما يستلمه التطبيق من Apple</strong> (عبر StoreKit على الآيفون): الخطط وأسعارها بعملتك، ومعلومات موقّعة من Apple عن اشتراكك في فجر Pro: الخطة، وهل هو فعّال، وتاريخ انتهائه أو تجديده، وهل يتجدد تلقائيًا، وهل تُعاد محاولة الدفع أو استُرد المبلغ. ويتحقق StoreKit من توقيع Apple على الآيفون.</li>
-        <li><strong>ما يحفظه التطبيق</strong>: هل فجر Pro فعّال، والخطة، وتاريخ الانتهاء، وحالة التجديد، ووقت آخر تحقق. ولا يرسل أي معلومات شراء إلينا ولا إلى أي جهة أخرى.</li>
+        <li><strong>ما يحفظه التطبيق</strong>: هل فجر Pro فعّال، والخطة، وتاريخ الانتهاء، وحالة التجديد، ووقت آخر تحقق. ومن الإصدار 1.0.2 تتلقى Superwall معاملات مشترياتك داخل التطبيق لتحليلات الإيرادات (القسم ٧)، ولا يُرسل غير ذلك من معلومات مشترياتك إلى أي جهة.</li>
         <li><strong>استعادة المشتريات</strong> تطلب من StoreKit مزامنة مشترياتك مع App Store.</li>
         <li><strong>ما نراه نحن</strong>: يقدّم لنا App Store Connect تقارير المبيعات والاشتراكات (مثل أعداد الاشتراكات حسب الخطة والبلد)، ولا تحدّد هويتك.</li>
       </ul>
@@ -416,11 +419,12 @@
 
 <section class="card" id="ar-leaves">
   <h2><span class="num">٧</span>متى تغادر المعلومات هاتفك</h2>
-  <h3>تلقائيًا، عبر Apple أو Google</h3>
+  <h3>تلقائيًا، عبر Apple أو Google أو Superwall</h3>
   <ul>
     <li><span class="pill android">أندرويد</span> <strong>مكتبة ML Kit من Google</strong> (مسح QR والباركود وتتبّع وضعية الجسم) تعمل على الهاتف، لكنها ترسل إلى Google معلومات تشخيصية واستخدامية: طراز الجهاز وإصدار أندرويد واسم التطبيق وإصداره ومعرّفات خاصة بالتثبيت لا تهدف إلى تحديد هويتك وبيانات الأداء. ولا تُرسل أي صور. التفاصيل: <a href="https://developers.google.com/ml-kit/android-data-disclosure" class="ltr">developers.google.com/ml-kit/android-data-disclosure</a>.</li>
     <li><span class="pill both">كلاهما</span> <strong>مشتريات المتجر</strong>: يتبادل التطبيق معلومات الاشتراك مع App Store أو Google Play كما في القسم ٦، ويتواصل المتجر مع خوادم Apple أو Google.</li>
     <li><span class="pill both">كلاهما</span> <strong>النسخ الاحتياطي</strong>: إن كان مفعّلًا، فقد ينسخ iCloud (أو النسخ الاحتياطي إلى حاسوبك) أو النسخ الاحتياطي من Google في أندرويد بيانات التطبيق إلى حسابك لاستعادتها على هاتف جديد. على الآيفون تُستثنى صور المغسلة، وعلى أندرويد تُستثنى حالة فجر Pro. يخضع ذلك لإعدادات هاتفك، ويمكنك إيقافه منها.</li>
+    <li><span class="pill ios">آيفون</span> <strong>تحليلات Superwall</strong> (من الإصدار 1.0.2): لمعرفة عدد المستخدمين الجدد وجلسات الاستخدام والمستخدمين النشطين والمشتريات والإيرادات، يتضمن التطبيق مكتبة Superwall. وهي ترسل إلى Superwall معرّفًا عشوائيًا تنشئه للتطبيق، ومعرّف آيفونك الخاص بتطبيقات هذا المطوّر (<span lang="en" dir="ltr">IDFV</span>، وليس معرّف الإعلانات)، وتفاصيل الجهاز والتطبيق (مثل الطراز وإصدار iOS واللغة والمنطقة الزمنية وإصدار التطبيق)، ووقت فتح التطبيق وإغلاقه، ومعاملات مشترياتك داخل التطبيق من Apple (المنتج والسعر والعملة والتاريخ). وقد تستنتج خوادم Superwall منطقة تقريبية من عنوان IP. لا يعطي التطبيق Superwall اسمك ولا بريدك ولا أي حساب، ولا تتلقى Superwall أبدًا موقعك ولا أوقات الصلاة ولا خطواتك ولا صور الكاميرا ولا الباركود ولا التحديات ولا المنبهات ولا سجل التشخيص. ولا يُستخدم ذلك للإعلانات أو لتتبّعك، ولا يطلب التطبيق أبدًا إذن التتبّع. وإن انقطعت الشبكة يعمل التطبيق ومنبهاته كما هي تمامًا. <a href="https://superwall.com/legal/privacy-policy">سياسة خصوصية Superwall</a>.</li>
     <li><span class="pill ios">آيفون</span> <strong>تقارير الأعطال من Apple</strong>: إن فعّلت «المشاركة مع مطوّري التطبيقات» في إعدادات التحليلات في الآيفون، فقد تشاركنا Apple تقارير الأعطال والاستخدام الخاصة بالتطبيق، ولا تتضمن اسمك أو بيانات تواصلك. يمكنك إيقاف ذلك من الإعدادات ← الخصوصية والأمن ← التحليلات والتحسينات.</li>
   </ul>
   <h3>فقط عندما تختار المشاركة</h3>
@@ -437,9 +441,10 @@
   <ul>
     <li><strong>Apple</strong>: متجر App Store، ومشتريات StoreKit، والنسخ الاحتياطي في iCloud، وخدمات الآيفون. <a href="https://www.apple.com/legal/privacy/">سياسة خصوصية Apple</a>.</li>
     <li><strong>Google</strong>: متجر Google Play، والفوترة، ومكتبة ML Kit (أندرويد)، والنسخ الاحتياطي في أندرويد، وخدمة Gmail التي تستضيف بريد الدعم لدينا. <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</li>
+    <li><strong>Superwall</strong> (<span lang="en" dir="ltr">Superwall, Inc.</span>): التحليلات وتقارير الإيرادات في تطبيق الآيفون، من الإصدار 1.0.2 (القسم ٧). <a href="https://superwall.com/legal/privacy-policy">سياسة خصوصية Superwall</a>.</li>
     <li><strong>GitHub</strong>: تستضيف هذا الموقع. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">بيان خصوصية GitHub</a>.</li>
   </ul>
-  <p>تتعامل كل جهة مع البيانات وفق سياستها. ولا نستخدم أي خدمات خارجية أخرى: لا مكتبات إعلانات ولا تحليلات ولا تقارير أعطال ولا تتبّع.</p>
+  <p>تتعامل كل جهة مع البيانات وفق سياستها. ولا نستخدم أي خدمات خارجية أخرى: لا مكتبات إعلانات ولا تقارير أعطال ولا تتبّع، ولا مكتبة تحليلات غير Superwall في تطبيق الآيفون.</p>
 </section>
 
 <section class="card" id="ar-retention">
@@ -449,7 +454,8 @@
     <li><strong>النسخ الاحتياطية</strong> تحتفظ بها Apple أو Google وفق إعدادات النسخ الاحتياطي لديك وسياساتهما.</li>
     <li><strong>الرسائل</strong> التي ترسلها إلينا نحتفظ بها فقط بالقدر اللازم لمساعدتك وحفظ سجل الدعم. اطلب منّا حذفها وسنحذفها.</li>
     <li><strong>سجلات الشراء</strong> تحتفظ بها Apple أو Google، وفي App Store Connect أو Play Console، وفق سياساتهما. حذف التطبيق لا يلغي الاشتراك: انظر <a href="../support/#ar-manage" data-internal>طريقة الإلغاء</a>.</li>
-    <li>لا نحتفظ بأي حساب أو بيانات تطبيق عنك، فلا يوجد ما نحذفه غير ذلك.</li>
+    <li><strong>التحليلات</strong> (آيفون): تحتفظ Superwall ببيانات التحليلات وفق سياسة الاحتفاظ الخاصة بها. وهي مرتبطة بمعرّفات عشوائية لا باسمك؛ ولطلب حذفها راسلنا. وحذف التطبيق يوقف أي تحليلات لاحقة.</li>
+    <li>لا نحتفظ بأي حساب أو بيانات تطبيق أخرى عنك، فلا يوجد ما نحذفه غير ذلك.</li>
   </ul>
 </section>
 
@@ -460,7 +466,7 @@
 
 <section class="card" id="ar-children">
   <h2><span class="num">١١</span>الأطفال</h2>
-  <p>«فجر» غير موجّه للأطفال دون ١٣ عامًا، ولا نجمع عن قصد معلومات من الأطفال. ولا تصل إلينا من التطبيقين أي معلومات شخصية عن أي مستخدم.</p>
+  <p>«فجر» غير موجّه للأطفال دون ١٣ عامًا، ولا نجمع عن قصد معلومات من الأطفال. ولا يطلب التطبيقان من أحد اسمًا ولا بريدًا إلكترونيًا ولا أي بيانات تواصل؛ والبيانات الوحيدة التي تُجمع هي تحليلات تطبيق الآيفون الموضّحة في القسم ٧.</p>
 </section>
 
 <section class="card" id="ar-choices">
